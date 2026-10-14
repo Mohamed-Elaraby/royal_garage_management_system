@@ -1,0 +1,730 @@
+/*!
+ *   AdminLTE RTL v2.4.8
+ *   Author: SI HaMaDa
+ *   License: Open source - MIT
+ *           Please visit http://opensource.org/licenses/MIT for more information
+ */
+/*
+ * RTL style corrections
+ * -------------------------
+ */
+
+/*
+ * Starter and main structure
+ * --------------------------
+ */
+.fa.fa-chevron-right,
+.fa.fa-chevron-left,
+.fa.fa-share,
+.fa.fa-reply,
+.fa.fa-angle-left,
+.fa.fa-angle-right,
+.fa.fa-arrow-right,
+.fa.fa-arrow-left {
+  transform: rotateY(180deg);
+}
+
+@media (max-width: 991px) {
+  .navbar-custom-menu .navbar-nav>li {
+    float: right
+  }
+
+  .navbar-collapse.pull-left+.navbar-custom-menu {
+    right: unset;
+    left: 40px;
+  }
+
+  .navbar-header .navbar-toggle {
+    margin-left: 5px;
+  }
+
+}
+
+@media (max-width: 767px) {
+
+  .main-sidebar {
+    -webkit-transform: translate(230px, 0);
+    -ms-transform: translate(230px, 0);
+    -o-transform: translate(230px, 0);
+    transform: translate(230px, 0);
+  }
+
+  .sidebar-open .content-wrapper,
+  .sidebar-open .main-footer {
+    -webkit-transform: translate(-230px, 0);
+    -ms-transform: translate(-230px, 0);
+    -o-transform: translate(-230px, 0);
+    transform: translate(-230px, 0);
+  }
+
+}
+
+@media (min-width: 767px) {
+
+  .main-header .logo {
+    float: right;
+  }
+
+  .main-header .navbar {
+    margin-left: 0;
+    margin-right: 230px;
+    transition: margin-right .3s ease-in-out;
+  }
+
+  .sidebar-mini.sidebar-collapse .main-header .navbar {
+    margin-left: 0;
+    margin-right: 50px;
+  }
+
+  .navbar-custom-menu>.navbar-nav>li>.dropdown-menu {
+    right: unset;
+    left: 0;
+  }
+
+  .content-wrapper,
+  .main-footer {
+    margin-left: unset;
+    margin-right: 230px
+  }
+
+  .content-header>.breadcrumb {
+    float: right;
+    right: unset;
+    left: 10px;
+  }
+
+  .sidebar-mini.sidebar-collapse .content-wrapper,
+  .sidebar-mini.sidebar-collapse .right-side,
+  .sidebar-mini.sidebar-collapse .main-footer {
+    margin-left: unset !important;
+    margin-right: 50px !important;
+  }
+
+  .sidebar-mini:not(.sidebar-mini-expand-feature).sidebar-collapse .sidebar-menu>li:hover>a>span:not(.pull-right),
+  .sidebar-mini:not(.sidebar-mini-expand-feature).sidebar-collapse .sidebar-menu>li:hover>.treeview-menu {
+    left: unset;
+    right: 50px;
+  }
+
+  .sidebar-mini:not(.sidebar-mini-expand-feature).sidebar-collapse .sidebar-menu>li:hover>a>span {
+    margin-left: unset;
+    margin-right: -3px;
+    padding: 12px 20px 12px 5px;
+  }
+
+  .sidebar-mini:not(.sidebar-mini-expand-feature).sidebar-collapse .sidebar-menu>li:hover>a>.pull-right-container {
+    float: left;
+    left: unset !important;
+    right: 180px !important;
+  }
+
+  .sidebar-mini.sidebar-collapse .sidebar-menu>li>a>span {
+    border-top-right-radius: 0;
+    border-top-left-radius: 4px;
+  }
+
+  .sidebar-mini.sidebar-collapse .sidebar-menu>li:not(.treeview)>a>span {
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 4px;
+  }
+
+  .sidebar-mini.sidebar-collapse .sidebar-menu>li>.treeview-menu {
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 4px;
+  }
+
+
+}
+
+.main-header .sidebar-toggle {
+  float: right;
+}
+
+
+.main-header .navbar-custom-menu,
+.navbar-right {
+  float: left;
+}
+
+
+.navbar-nav>.messages-menu>.dropdown-menu>li .menu>li>a>h4>small {
+  right: unset;
+  left: 0;
+}
+
+.navbar-nav>.messages-menu>.dropdown-menu>li .menu>li>a>h4,
+.navbar-nav>.messages-menu>.dropdown-menu>li .menu>li>a>p {
+  padding: 0;
+  margin: 0 45px 0 0;
+}
+
+.navbar-nav>.messages-menu>.dropdown-menu>li .menu>li>a>div>img {
+  margin: auto auto auto 10px;
+}
+
+.navbar-nav>.messages-menu>.dropdown-menu>li .menu>li>a>p {
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.main-sidebar {
+  left: unset;
+  right: 0;
+}
+
+.user-panel>.info {
+  padding: 5px 15px 5px 5px;
+  left: unset;
+  right: 55px;
+}
+
+.sidebar-menu>li>a {
+  padding: 12px 15px 12px 5px;
+  border-left: none !important;
+  border-right: 3px solid transparent;
+}
+
+.treeview-menu {
+  padding-left: unset;
+  padding-right: 5px;
+}
+
+.treeview-menu>li>a {
+  padding: 5px 15px 5px 5px;
+}
+
+.sidebar-menu li>a>.pull-right-container {
+  right: unset;
+  left: 10px;
+}
+
+.sidebar-mini:not(.sidebar-mini-expand-feature).sidebar-collapse .sidebar-menu>li:hover>.treeview-menu {
+  margin-left: unset;
+  margin-right: 0;
+}
+
+
+.content-header>.breadcrumb>li>a>.fa,
+.content-header>.breadcrumb>li>a>.glyphicon,
+.content-header>.breadcrumb>li>a>.ion {
+  margin-right: 0;
+  margin-left: 5px;
+}
+
+.content-header>h1>small {
+  padding-left: unset;
+  padding-right: 4px;
+}
+
+.control-sidebar.control-sidebar-open,
+.control-sidebar.control-sidebar-open+.control-sidebar-bg {
+  right: unset;
+  left: 0;
+}
+
+.control-sidebar-bg,
+.control-sidebar {
+  left: -230px;
+  transition: left .3s ease-in-out;
+}
+
+
+.box-header>.box-tools.pull-right .dropdown-menu {
+  right: auto;
+  left: 0;
+}
+
+/*
+ * Starter and main structure
+ * --------------------------
+ */
+
+
+
+
+
+/*
+ * Indexs
+ * ------
+ */
+
+
+/* Statics area */
+
+.small-box .icon {
+  right: unset;
+  left: 10px;
+}
+
+.fa.fa-arrow-circle-right,
+.fa.fa-arrow-circle-left {
+  transform: rotate(180deg)
+}
+
+/* Statics area */
+
+
+/* Charts with tabs */
+.nav-tabs-custom>.nav-tabs>li.header {
+  float: left !important;
+}
+
+div.chart {
+  direction: ltr
+}
+
+/* Charts with tabs */
+
+
+/* Chat Box */
+
+.box-header>.box-tools {
+  right: unset;
+  left: 10px;
+}
+
+.chat .item>.message {
+  margin-left: 0;
+  margin-right: 55px;
+}
+
+.chat .item>.attachment {
+  margin-left: 15px;
+  margin-right: 65px;
+}
+
+/* Chat Box */
+
+
+
+/* To Do list */
+
+.todo-list>li .tools {
+  float: left;
+}
+
+.todo-list>li>input[type="checkbox"] {
+  margin: 0 5px 0 10px;
+}
+
+.todo-list>li .text {
+  margin-left: unset;
+  margin-right: 5px;
+}
+
+.todo-list>li .label {
+  margin-left: unset;
+  margin-right: 10px;
+}
+
+/* To Do list */
+
+
+
+/* wysihtml5 Editor */
+
+ul.wysihtml5-toolbar>li {
+  float: right;
+}
+
+/* wysihtml5 Editor */
+
+
+
+/* Map box Visitors */
+.jvectormap-zoomin,
+.jvectormap-zoomout {
+  box-sizing: content-box;
+  left: unset;
+  right: 10px;
+}
+
+/* Map box Visitors */
+
+
+
+/* Datepicker */
+
+.datepicker {
+  direction: rtl
+}
+
+/* Datepicker */
+
+
+
+/* Info Boxes Style 2 */
+
+.info-box-icon {
+  float: right;
+}
+
+.info-box-content {
+  margin-left: unset;
+  margin-right: 90px;
+}
+
+/* Info Boxes Style 2 */
+
+/* Monthly Recap Report */
+.progress-group .progress-number {
+  float: left;
+}
+
+/* Monthly Recap Report */
+
+/* Direct Chat */
+
+.direct-chat-name.pull-left {
+  float: left !important;
+}
+
+.direct-chat-name.pull-right {
+  float: right !important;
+}
+
+.direct-chat-timestamp.pull-left {
+  float: left !important;
+}
+
+.direct-chat-timestamp.pull-right {
+  float: right !important;
+}
+
+.contacts-list-img {
+  float: right;
+}
+
+.contacts-list-info {
+  margin-left: unset;
+  margin-right: 45px;
+}
+
+/* Direct Chat */
+
+
+
+/* USERS LIST */
+
+.users-list>li {
+  float: right;
+}
+
+/* USERS LIST */
+
+
+/* TABLE: LATEST ORDERS */
+
+.sparkbar canvas {
+  transform: rotateY(180deg);
+}
+
+/* TABLE: LATEST ORDERS */
+
+
+
+/* Recently Added Products */
+
+.products-list .product-img {
+  float: right;
+}
+
+.products-list .product-info {
+  margin-left: unset;
+  margin-right: 60px;
+}
+
+/* Recently Added Products */
+
+
+/*
+ * Indexs
+ * ------
+ */
+
+
+
+
+/*
+  * Layouts Pages   
+  * -------------
+  */
+
+.layout-top-nav .content-wrapper,
+.layout-top-nav .main-footer {
+  margin-right: 0;
+}
+
+.layout-top-nav .main-header .navbar {
+  margin-right: 0;
+}
+
+.callout {
+  border-left: none;
+  border-right: 5px solid #eee;
+  padding: 15px 15px 15px 30px;
+}
+
+
+
+/*
+  * Widgets Page   
+  * ------------
+  */
+
+.widget-user-2 .widget-user-image>img {
+  float: right;
+}
+
+.widget-user-2 .widget-user-username,
+.widget-user-2 .widget-user-desc {
+  margin-left: unset;
+  margin-right: 75px;
+}
+
+.user-block img {
+  float: right;
+}
+
+.user-block .username,
+.user-block .description,
+.user-block .comment {
+  margin-left: unset;
+  margin-right: 50px;
+}
+
+.attachment-block .attachment-img {
+  float: right;
+}
+
+.attachment-block .attachment-pushed {
+  margin-left: unset;
+  margin-right: 110px;
+}
+
+.img-sm,
+.img-md,
+.img-lg,
+.box-comments .box-comment img,
+.user-block.user-block-sm img {
+  float: right;
+}
+
+.box-comments .comment-text,
+.img-sm+.img-push {
+  margin-left: unset;
+  margin-right: 40px;
+}
+
+
+
+
+
+/*
+  * UI   
+  * --
+  */
+
+.alert-dismissable,
+.alert-dismissible {
+  padding-right: 15px;
+  padding-left: 35px;
+}
+
+.alert .icon {
+  margin-right: unset;
+  margin-left: 10px;
+}
+
+.btn-app>.badge {
+  right: unset;
+  left: -10px;
+}
+
+.slider.slider-vertical .slider-tick,
+.slider.slider-vertical .slider-handle {
+  margin-left: unset;
+  margin-right: -5px;
+}
+
+.timeline>li>.timeline-item>.time {
+  float: left;
+}
+
+.timeline>li>.fa,
+.timeline>li>.glyphicon,
+.timeline>li>.ion {
+  left: unset;
+  right: 18px;
+}
+
+.timeline>li>.timeline-item {
+  margin-left: 15px;
+  margin-right: 60px;
+}
+
+.timeline::before {
+  left: unset;
+  right: 31px;
+}
+
+.timeline>li {
+  margin-right: unset;
+  margin-left: 10px;
+}
+
+
+/*
+  * Forms   
+  * -----
+  */
+
+.select2-container--default .select2-selection--multiple .select2-selection__choice {
+  float: right;
+}
+
+.select2-container--default .select2-results>.select2-results__options,
+.select2-container--default .select2-selection--single,
+.select2-selection .select2-selection--single {
+  direction: rtl
+}
+
+.bootstrap-timepicker-widget.dropdown-menu.open {
+  direction: ltr
+}
+
+.daterangepicker.ltr {
+  direction: rtl;
+  text-align: right;
+}
+
+.daterangepicker td.start-date {
+  border-radius: 0 4px 4px 0;
+}
+
+.daterangepicker td.end-date {
+  border-radius: 4px 0 0 4px;
+}
+
+.daterangepicker.ltr .ranges {
+  float: right;
+}
+
+.ranges {
+  text-align: right;
+}
+
+
+/*
+  * Calendar   
+  * --------
+  */
+
+.fc-color-picker>li {
+  float: right;
+}
+
+.fc-toolbar .fc-left {
+  float: right;
+}
+
+.fc-toolbar .fc-right {
+  float: left;
+}
+
+.fc .fc-button-group>* {
+  float: right;
+}
+
+.fc-state-default.fc-corner-right {
+  border-radius: 4px 0 0 4px;
+}
+
+.fc-state-default.fc-corner-left {
+  border-radius: 0 4px 4px 0;
+}
+
+
+/*
+  * Mail   
+  * ----
+  */
+
+.has-feedback .form-control {
+  padding-right: 10px
+}
+
+.nav-pills>li>a>.fa,
+.nav-pills>li>a>.glyphicon,
+.nav-pills>li>a>.ion {
+  margin-right: unset;
+  margin-left: 5px;
+}
+
+.nav-stacked>li>a {
+  border-radius: 0;
+  border-top: 0;
+  border-right: 3px solid transparent;
+  color: #444;
+}
+
+.nav-stacked>li.active>a,
+.nav-stacked>li.active>a:hover {
+  border-left-color: transparent;
+  border-right-color: #3c8dbc;
+}
+
+.mailbox-attachments li {
+  float: right;
+}
+
+/*
+ * Examples
+ * --------
+ */
+
+.margin-r-5 {
+  margin-right: unset;
+  margin-left: 5px;
+}
+
+/* Login&register */
+.btn-social {
+  padding-left: 10px;
+  padding-right: 44px;
+  text-align: right;
+}
+
+.btn-social> :first-child {
+  left: unset;
+  right: 0;
+  border-right: none;
+  border-left: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.icheck>label {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+/* Look page */
+.lockscreen-image {
+  left: unset;
+  right: -10px;
+}
+
+.lockscreen-credentials {
+  margin-left: unset;
+  margin-right: 70px;
+}
+
+/* 404&500 */
+.error-page>.headline {
+  float: none;
+  text-align: center;
+}
+
+.error-page>.error-content {
+  margin-left: unset;
+  margin-right: unset;
+}

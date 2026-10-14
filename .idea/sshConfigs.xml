@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="SshConfigs">
+    <configs>
+      <sshConfig host="giowm1189.siteground.biz" id="71d1cec6-6380-4182-989a-c955f2e9f6f4" keyPath="D:\Laravel Projects\sheikh_center_system\skbmw-system.com-SSH\sheikhCenterGroupManagementSystem_sshPrivateKey.ppk" port="18765" customName="skbmw-system.com" nameFormat="CUSTOM" username="u1050-c6xljf4zzdbx" useOpenSSHConfig="false">
+        <option name="customName" value="skbmw-system.com" />
+      </sshConfig>
+    </configs>
+  </component>
+</project>

@@ -1,0 +1,5 @@
+Packages Installing
+
+== Laravel Collective
+== Laratrust
+== Intervention Image

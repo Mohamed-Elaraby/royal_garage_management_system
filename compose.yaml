@@ -1,0 +1,14 @@
+name: royal_garage_management_system
+services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    working_dir: /var/www/html
+    volumes:
+      - ./:/var/www/html
+    environment:
+      COMPOSER_HOME: /tmp/composer
+    ports:
+      - "127.0.0.1:8000:8000"
+    entrypoint: []

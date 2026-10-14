@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .container {
+            padding-right: 15px;
+            padding-left: 15px;
+            margin-right: auto;
+            margin-left: auto;
+        }
+        @media (min-width: 768px) {
+            .container , .page-header, .page-footer {
+                width: 750px;
+            }
+        }
+        @media (min-width: 992px) {
+            .container , .page-header, .page-footer {
+                width: 970px;
+            }
+        }
+        @media (min-width: 1200px) {
+            .container , .page-header, .page-footer {
+                width: 1170px;
+            }
+        }
+
+        @media print {
+            thead {display: table-header-group;}
+            tfoot {display: table-footer-group;}
+
+            button {display: none;}
+
+            body {margin: 0;}
+        }
+        .page
+        {
+            page-break-after: always;
+        }
+        .page-header, .page-header-space
+        {
+            height: 100px;
+            padding: 5px;
+            margin: 5px;
+        }
+        .page-footer, .page-footer-space
+        {
+            height: 100px;
+            padding: 5px;
+            margin: 5px;
+        }
+        .page-header
+        {
+            border: 1px solid #f00;
+            position: fixed;
+            top: 0;
+            /*background-color: #00a157;*/
+        }
+        .page-footer
+        {
+            border: 1px solid #f00;
+            position: fixed;
+            bottom: 0;
+            /*background-color: #00a157;*/
+        }
+        body
+        {
+            margin: 0;
+            padding: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="page-header">
+            Header Content
+        </div>
+        <div class="page-footer">
+            Footer Content
+        </div>
+        <table>
+            <thead>
+            <tr>
+                <td>
+                    <div class="page-header-space"></div>
+                </td>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>
+                    <div class="content">
+                        lorem600
+                    </div>
+                </td>
+            </tr>
+            </tbody>
+            <tfoot>
+            <tr>
+                <td>
+                    <div class="page-footer-space"></div>
+                </td>
+            </tr>
+            </tfoot>
+        </table>
+    </div>
+</body>
+</html>

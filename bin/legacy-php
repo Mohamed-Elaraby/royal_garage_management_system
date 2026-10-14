@@ -1,0 +1,7 @@
+#!/usr/bin/env sh
+set -eu
+
+exec docker compose run --rm --service-ports \
+  --user "$(id -u):$(id -g)" \
+  --entrypoint php \
+  app "$@"
